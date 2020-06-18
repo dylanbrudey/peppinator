@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peppinator</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/page_jeu.css')}}"/>
+    <script type="text/javascript" src="{{url_for('static', filename = 'js/game.js')}}"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+        <div class="div_logo_fac"><img src="{{url_for('static', filename = 'image/UniversiteParis_logo_blanc.png')}}" class="logo_fac"></div>
+        <div class="div_logo_home"><a href="/" ><img class= "logo_home" src="{{url_for('static', filename = 'image/home.png')}}"></a></div>
+
+        <div class="blockquote-wrapper">
+          <div class="blockquote">
+            <h1>
+                <span id="numero" class="blockquote_question"> Question n°1</span><span id="question_box"><span id="question"> {{ question }}</span></span>
+             </h1>
+          </div>
+        </div>
+
+        <div class="one_button"><button class="buttonReco" onclick="location.reload()"><span class="material-icons">autorenew</span></button></div>
+
+        <div class="buttons_and_pepper">
+
+            <div class="buttons_line">
+                <img id="image" src="{{url_for('static', filename = 'image/cpeppertristeinterro.png')}}" class="logo_jeu"></img>
+            </div>
+
+            <div class="buttons">
+                <div>
+                    <button id="Oui" class="button_jeu" onclick="boutonOui()">Oui</button>
+                    <button id="Jsp" class="button_jeu" onclick="boutonJsp()">Ne sais pas</button>
+                    <button id="Non" class="button_jeu" onclick="boutonNon()">Non</button>
+                </div>
+
+                <div >
+                    <button id="ProbOui" class="button_jeu" onclick="boutonProbOui()">Probablement </button>
+                    <button id="ProbNon" class="button_jeu" onclick="boutonProbNon()">Probablement pas</button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</body>
+</html>

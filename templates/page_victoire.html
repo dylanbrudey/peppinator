@@ -1,0 +1,29 @@
+
+<body>
+
+    <div class="div_logo_fac"><img src="{{url_for('static', filename = 'image/UniversiteParis_logo_blanc.png')}}" class="logo_fac"></div>
+        <div class="div_logo_home"><a href="/" ><img class= "logo_home" src="{{url_for('static', filename = 'image/home.png')}}"></a></div>
+
+        <div class="blockquote-wrapper">
+          <div class="blockquote">
+            <h1>
+                <span class="block_menu_span"> Peppinator est imbattable !</span>
+             </h1>
+          </div>
+        </div>
+
+        <div class="buttons_and_pepper">
+            <div class="buttons_line">
+                <img id="image" src="{{url_for('static', filename = 'image/cpeppersourirecoin.png')}}" class="logo_jeu">
+            </div>
+            <div class="buttonConfirmation">
+                 <button class="button_bilan" onclick="obtenir_question(); obtenir_reponses()"></span>Bilan</button>
+            </div>
+            <div class="buttonConfirmation">
+                <button class="buttonRejouer" onclick="location.reload()"><span class="material-icons">autorenew</span>Rejouer</button>
+            </div>
+
+        </div>
+
+</body>
+

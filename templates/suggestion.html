@@ -1,0 +1,30 @@
+
+<body>
+
+    <div class="div_logo_fac"><img src="{{url_for('static', filename = 'image/UniversiteParis_logo_blanc.png')}}" class="logo_fac"></div>
+        <div class="div_logo_home"><a href="/" ><img class= "logo_home" src="{{url_for('static', filename = 'image/home.png')}}"></a></div>
+
+        <div class="blockquote-wrapper">
+          <div class="blockquote">
+            <h1>
+                <span id="question" class="blockquote_question"> L'oeuvre se trouve t-elle dans la liste? </span>
+                <span id="question"> Si oui, valide l'oeuvre recherchée, sinon ajoute-la </span>
+                <span id="question" > avec une question permettant de la distinguer. </span>
+             </h1>
+          </div>
+        </div>
+        <div class="div_sug">
+            <form name="form_ajout_oeuvre">
+                <input  type="text" name="ajout_oeuvre" id="recherche" placeholder="Oeuvre" required />
+                <input  type="number" name="ajout_annee" id="ajout_annee" placeholder="Annee de sortie (ou une estimation)" required />
+                <input  type="text" name="ajout_question" id="ajout_question" placeholder="Question" required />
+                <input  type="text" name="ajout_reponse" id="ajout_reponse" placeholder="Réponse" required />
+                <input  type="submit" name="valider" id="buttonSubmit" onload="verifier_ajout_oeuvre()" onchange="verifier_ajout_oeuvre()" onclick="soumettre_oeuvre(true)" value="Valider"/>
+            </form>
+            <ul id="liste">
+            </ul>
+        </div>
+            <script type="text/javascript" src="{{url_for('static', filename = 'js/game.js')}}"></script>
+
+
+</body>

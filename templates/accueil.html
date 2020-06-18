@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="fr">
+<head>
+
+    <link rel="stylesheet" href="/static/css/home.css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="{{url_for('static', filename = 'js/game.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Pepinator</title>
+</head>
+<body class="home" id="home" >
+<div class="section">
+
+</div>
+
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/base/jquery-ui.css">
+    <div id="dialog" title="Règle du jeu et oeuvres disponibles">Pensez à un film ou une série et j'essaierai de le trouver !
+    </div>
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script>
+    $(function() {
+        $( "#dialog" ).dialog({
+            autoOpen: false,
+            height:200,
+            width:400,
+            buttons: {
+                "Jouer": function() {
+                    window.location.href = "./jeu";
+                    $('body').css('background', 'yellow');
+                    $( this ).dialog( "close" );
+                },
+                "Non": function() {
+                    $( this ).dialog( "close" );
+                }
+            }
+        });
+    });
+</script>
+<script>$("#dialog").css("white-space","pre-wrap");</script>
+<script>
+    $('.section').click(function () {
+        $("#dialog").dialog('open');
+    });
+</script>
+
+
+</body>
+</html>

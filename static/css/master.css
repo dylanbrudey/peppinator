@@ -1,0 +1,375 @@
+
+
+.titre{
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    font-family: "Apple Chancery";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 90px;
+    color:black;
+
+}
+
+
+body{
+background-image:url("/static/image/bk.png");
+}
+
+
+.logo_accueil{
+    position: absolute;
+    width: 423px;
+    height: 311px;
+    left:35%;
+
+    top: 105px;
+
+    background-blend-mode: darken;
+
+}
+
+.logo_jeu{
+    margin-top: 14%;
+    margin-left: 35%;
+    margin-right: auto;
+
+    width:30%;
+    height: auto;
+}
+.logo_home{
+    position: absolute;
+    top:10%;
+    margin-bottom: 400px;
+    width: 50px;
+    height: auto;
+}
+.logo_fac{
+	position:absolute;
+	top:0;
+	left:0;
+	width:200px;
+}
+.logo_fin{
+    margin-top: 14%;
+    margin-left: 25%;
+    margin-right: auto;
+
+    width:30%;
+    height: auto;
+}
+.bulle{
+    position: absolute;
+    top:-9%;
+   	right: 27%;
+
+    width:30%;
+    height: auto;
+
+}
+
+.bulle_fin{
+    position: absolute;
+    top:-9%;
+   	right: 38%;
+
+    width:30%;
+    height: auto;
+    z-index:3;
+}
+
+.buttonJouer{
+    position: absolute;
+    width:100px;
+    left: 617.04px;
+    top: 550px;
+
+    box-shadow: 0px 10px 14px -7px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:8px;
+
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    outline: none;
+}
+
+
+button:hover{
+    opacity: 1;
+}
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 3px #666;
+
+}
+
+.buttonOui{
+    position: absolute;
+    width: 240px;
+    height: auto;
+    left: 20%;
+    top:55%;
+
+    box-shadow: 0px 10px 14px -7px #fff6af;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    background-color:#ffec64;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px white;
+    outline:none;
+    opacity:0.9
+
+}
+
+.buttonNon{
+    position: absolute;
+    width: 240px;
+    height: auto;
+    right:20%;
+    top: 55%;
+
+    box-shadow: 0px 10px 14px -7px #fff6af;
+    background-image: linear-gradient(to left, #f77062 0%, #fe5196 100%);
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px white;
+    outline:none;
+    opacity:0.9
+
+}
+
+.buttonJsp{
+    position: absolute;
+    width: 240px;
+    height: auto;
+    left: 42%;
+    top: 75%;
+
+    box-shadow: 0px 10px 14px -7px #fff6af;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fee140 100%);
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px white;
+    outline:none;
+    opacity:0.9
+
+}
+
+.buttonProb{
+    position: absolute;
+    width: 240px;
+    height: auto;
+    left: 20%;
+    top: 68%;
+
+    box-shadow: 0px 10px 14px -7px #fff6af;
+    background-image: linear-gradient(60deg, #43e97b 0%, #fbed96 100%);
+    border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px white;
+    outline:none;
+    opacity:0.9
+}
+
+.buttonProbpas{
+    position: absolute;
+    width: 241px;
+    height: auto;
+    right:20%;
+    top: 68%;
+
+    box-shadow: 0px 10px 14px -7px #fff6af;
+    background-image: linear-gradient(to right,  #fee140 0%, #fa709a 100%);
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px white;
+    outline:none;
+    opacity:0.9
+}
+
+.buttonReco{
+    position: absolute;
+    top: 90%;
+    left: 42%;
+    width: 241px;
+    border-radius:8px;
+    font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+    display:flex;
+	padding: 13px 32px;
+	text-decoration:none;
+    outline:none;
+    background-color:#DCDCDC;
+    opacity:0.9
+}
+
+.buttonRejouer{
+    position: absolute;
+    top: 90%;
+    left: 42%;
+    width: auto;
+    border-radius:8px;
+    font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+    display:flex;
+	padding: 13px 32px;
+	text-decoration:none;
+    outline:none;
+    background-color:#DCDCDC;
+    color:black;
+    opacity:0.9
+
+}
+
+.ques{
+    position: absolute;
+    top:13%;
+    margin-left: 49%;
+    margin-right: 15%;
+    width:240px;
+    height: auto;
+
+    color:black;
+    font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+    text-align: center;
+    z-index:1;
+}
+
+.ques_fin{
+    position: absolute;
+    top:14%;
+    margin-left: 38%;
+    margin-right: 15%;
+    width:240px;
+    height: auto;
+
+    color:black;
+    font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+    text-align: center;
+    z-index:4;
+}
+
+.penser{
+	position: absolute;
+    top:10%;
+    margin-left: 38%;
+    margin-right: 15%;
+    width:240px;
+    height: auto;
+
+    color:black;
+    font-family:Arial;
+	font-size:15px;
+    text-align: center;
+    z-index:4;
+
+}
+
+.jacket{
+    position: absolute;
+    top:34%;
+    left: 61%;
+    width:20%;
+    height:61%;
+    z-index:2;
+}
+div{
+	text-align:center;
+
+}
+
+.num{
+    position: absolute;
+    top:10%;
+    margin-left: 49%;
+    margin-right: 15%;
+    width:240px;
+    height: auto;
+
+    color:black;
+    font-family:Arial;
+	font-size:15px;
+    text-align: center;
+    z-index:1;
+}
+
+.pell{
+    position: absolute;
+    top:32%;
+    left: 56%;
+    height:65%;
+    width: 30%;
+    z-index:1;
+}
+
+.trouve{
+    position: absolute;
+    top:20%;
+    margin-left: 38%;
+    margin-right: 15%;
+    width:240px;
+    height: auto;
+
+    color:black;
+    font-family:Arial;
+	font-size:15px;
+    text-align: center;
+    z-index:4;
+}

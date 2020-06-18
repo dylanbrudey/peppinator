@@ -1,0 +1,29 @@
+<body>
+    <div class="div_logo_fac"><img src="{{url_for('static', filename = 'image/UniversiteParis_logo_blanc.png')}}" class="logo_fac"></div>
+        <div class="div_logo_home"><a href="/" ><img class= "logo_home" src="{{url_for('static', filename = 'image/home.png')}}"></a></div>
+
+        <div class="blockquote-wrapper">
+          <div class="blockquote">
+            <h1>
+                <span id="numero" class="blockquote_question"> Résumé de partie </span>
+                <span id="question"> Sélectionne les réponses attendues que tu juges fausses.</span>
+             </h1>
+          </div>
+        </div>
+    <div class="buttonBilan">
+        <button class="buttonRejouer" onclick="location.reload()"><span class="material-icons">autorenew</span>Rejouer</button>
+        <button class="button_corriger" id="corrigerBilan" onclick="getlistecorrection();correction()"></span>Corriger</button>
+    </div>
+    <div class="div_tab">
+    <table>
+        <thead>
+            <tr>
+                <th>Questions posées</th>
+                <th>Réponses attendues</th>
+                <th>Réponses utilisateur</th>
+                <th id="th_corriger">À corriger</th>
+            </tr>
+        </thead>
+    </table>
+    </div>
+</body>

@@ -1,0 +1,1099 @@
+/* Source :  https://codepen.io/jupago/pen/GPxqLX - CodePen Home
+Quote: Jared Spool • Web Site Usability: A Designer's Guide
+Juan Pablo */
+
+.titre{
+    position: relative;
+    font-family: "Apple Chancery", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 90px;
+    color:black;
+
+}
+
+
+body{
+
+    background-image:url("/static/image/sanspepper.png");
+    background-size: cover;
+    margin: 0;
+    padding:0;
+    position:absolute;/* this is very important*/
+    bottom:0;
+    top:0;
+    right:0;
+    left:0;
+
+    overflow: hidden;
+	overflow-y:scroll;
+}
+
+
+.logo_accueil{
+    position: relative;
+    width: 423px;
+    height: 311px;
+    left:35%;
+
+    top: 105px;
+
+    background-blend-mode: darken;
+
+}
+
+.div_logo_home{
+    width: 30%;
+}
+
+
+
+img {
+    display: block;
+}
+/*
+.bulle_question{
+    position: relative;
+    max-width: 100%;
+}
+*/
+
+.num_question{
+    position: absolute;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    top: 35%;
+    left: 42%;
+    color: white;
+    font-weight: bold;
+}
+
+.bulle{
+   display: block;
+    max-width:80%;
+    height: auto;
+}
+
+
+#Oui:hover, #Non:hover, #ProbOui:hover, #ProbNon:hover, #Jsp:hover, .buttonReco:hover, #oui:hover,#non:hover, #ouiC, #nonC{
+		opacity: 1;
+	}
+
+
+/*Mobile*/
+@media (max-width: 930px) {
+    .buttons_line{
+        display:inline;
+
+    }
+
+    .logo_jeu{
+        width:30vw;
+        height: auto;
+        position:absolute;
+        margin-top:-40vw;
+        margin-left:-15vw;
+        display:inline
+    }
+
+    .logo_home{
+    position: relative;
+    width: 25%;
+    height: auto;
+}
+
+	.logo_fac{
+		position:relative;
+		width:20%;
+		float: right;
+	}
+
+	.buttons_and_pepper{
+
+         margin-top:40vw;
+	}
+	.ques {
+		color:#333333;
+		font-family: Arial, sans-serif;
+		font-size:2.4vw;
+		height: auto;
+		opacity: 0.7;
+		width: 30vw;
+		margin-top: 8vh ;
+	}
+
+	.num{
+		position: fixed;
+		left: 20%;
+		color: goldenrod;
+		font-family: Arial, sans-serif;
+		font-size:2.8vw;
+		font-weight: bold;
+		font-style: italic;
+		opacity: 0.7;
+		margin-top:5vh;
+	}
+
+    .one_button{
+    padding: 1vw;
+
+    }
+/*
+    .sous_bulle_question {
+    position: relative;
+    display: inline-block;
+    left:15%;
+    max-width: 65%;
+    top:10vh;
+}
+
+ */
+    #Oui{
+    width: 40vw;
+    height: auto;
+    box-shadow: 0px 10px 14px -7px #fff6af;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    background-color:#ffec64;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:0.53vw;
+	text-decoration:none;
+	text-shadow:0px 1px 0px white;
+    outline:none;
+    opacity:0.9
+
+    }
+
+    #Non{
+    position: relative;
+    width: 40vw;
+    height: auto;
+
+    box-shadow: 0px 10px 14px -7px #fff6af;
+    background-image: linear-gradient(to left, #f77062 0%, #fe5196 100%);
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+    padding:0.53vw;
+	text-decoration:none;
+	text-shadow:0px 1px 0px white;
+    outline:none;
+    opacity:0.9
+
+}
+#Jsp{
+    position: relative;
+    width: 40vw;
+    height: auto;
+
+    box-shadow: 0px 10px 14px -7px #fff6af;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fee140 100%);
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:0.53vw;
+	text-decoration:none;
+	text-shadow:0px 1px 0px white;
+    outline:none;
+    opacity:0.9
+
+}
+
+#ProbOui{
+    position: relative;
+    width: 40vw;
+    height: auto;
+
+    box-shadow: 0px 10px 14px -7px #fff6af;
+    background-image: linear-gradient(60deg, #43e97b 0%, #fbed96 100%);
+    border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:0.53vw;
+	text-decoration:none;
+	text-shadow:0px 1px 0px white;
+    text-align: center;
+    outline:none;
+    opacity:0.9
+}
+
+#ProbNon{
+    position: relative;
+    width: 40vw;
+    height: auto;
+
+    box-shadow: 0px 10px 14px -7px #fff6af;
+    background-image: linear-gradient(to right,  #fee140 0%, #fa709a 100%);
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:0.53vw;
+	text-decoration:none;
+	text-shadow:0px 1px 0px white;
+    outline:none;
+    opacity:0.9
+}
+
+
+div{
+	text-align:center;
+}
+.bulle_fin{
+    position: fixed;
+    display: inline-block;
+    left:25%;
+    max-width: 50vw;
+    margin-top:15vh;
+    z-index:3;
+}
+
+.ques_fin {
+		position: relative;
+	    top:21vh ;
+		height: auto;
+		left: auto;
+
+		color: black;
+		font-family: Arial;
+		font-size: 2.5vw;
+		font-weight: bold;
+		text-align: center;
+		z-index: 4;
+	}
+
+	.penser {
+		position: relative;
+		top: 21vh;
+		margin-left: 40%;
+		margin-right: 15%;
+		width: 18vw;
+		height: auto;
+		left: 2%;
+
+		color: black;
+		font-family: Arial;
+		font-size: 2.8vw;
+		text-align: center;
+		z-index: 4;
+
+	}
+
+	.jacket {
+		position: absolute;
+		top: 63%;
+        left:70%;
+		width: 25%;
+		height: 40vw;
+		z-index: 2;
+		display: inline-block;
+	}
+
+	div {
+		text-align: center;
+
+	}
+
+
+	.pell {
+		position: absolute;
+		top: 62%;
+		left: 64%;
+		height: 42.3vw;
+		width: 35%;
+		z-index: 1;
+
+		display: inline-block;
+	}
+
+
+	.logo_fin{
+		position: absolute;
+		width:40vw;
+		height: auto;
+		top: 60%;
+		left: 27%;
+		display: inline-block;
+	}
+
+	.buttonRejouer{
+		top:71vh;
+		border-radius:8px;
+		font-family:Arial;
+		font-size:15px;
+		font-weight:bold;
+		padding:13px 20px;
+		text-decoration:none;
+		outline:none;
+		background-color:#DCDCDC;
+		opacity:0.9;
+		margin-top: 1vw;
+		color:black;
+	}
+
+	.jacket_pell{
+		height:auto;
+		display:inline-block;
+
+	}
+
+	#pepper_fin{
+		margin-top:55vh;
+	}
+
+
+}
+
+/*Desktop and Laptop*/
+@media (min-width: 931px) {
+	.buttons_line {
+		/*display: inline-block;*/
+		margin-left: 41vw;
+	}
+
+	.buttons_and_pepper {
+		height: auto;
+	}
+
+    .buttonBilan{
+        margin-top: 2vh;
+    }
+	.buttonConfirmation{
+		margin-top: 2vh;
+		display: inline-block;
+	}
+
+	.buttons{
+		margin-top:6vh;
+	}
+
+	.logo_jeu {
+		margin-right: auto;
+		width: 16vw;
+		height: auto;
+		margin-top:2vw;
+	}
+
+	.logo_home {
+		position: relative;
+		width: 20%;
+		height: auto;
+	}
+
+	.logo_fac {
+		position: relative;
+		width: 15%;
+		float: right;
+	}
+
+	.ques {
+		color: #333333;
+		font-family: Arial, sans-serif;
+		font-size: 0.9vw;
+		height: auto;
+		opacity: 0.7;
+		width: 12vw;
+		margin-block-start: 4vw;
+	}
+
+	.num {
+		position: fixed;
+		left: 10%;
+		color: goldenrod;
+		font-family: Arial, sans-serif;
+		font-size: 1.5vw;
+		font-weight: bold;
+		font-style: italic;
+		opacity: 0.7;
+	}
+/*
+	.sous_bulle_question {
+		position: relative;
+		display: inline-block;
+		left: 10%;
+		max-width: 25%;
+	}
+
+ */
+
+
+
+	.buttonJouer {
+		position: relative;
+		width: 100px;
+		left: 617.04px;
+		top: 550px;
+
+		box-shadow: 0px 10px 14px -7px #8a2a21;
+		background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+		background-color: #c62d1f;
+		border-radius: 8px;
+
+		cursor: pointer;
+		color: #ffffff;
+		font-family: Arial;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 13px 32px;
+		text-decoration: none;
+		text-shadow: 0px 1px 0px #810e05;
+		text-align: center;
+		margin: 0;
+		position: relative;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		outline: none;
+	}
+
+
+	#Oui {
+		width: 11.5vw;
+		height: auto;
+		box-shadow: 0px 10px 14px -7px #fff6af;
+		background-image: linear-gradient(to right, #38f9d7 0%, #43e97b 100%);
+		background-color: #ffec64;
+		border-radius: 8px;
+		display: inline-block;
+		cursor: pointer;
+		color: #333333;
+		font-family: Arial;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 0.53vw;
+		text-decoration: none;
+		text-shadow: 0px 1px 0px white;
+		outline: none;
+		opacity: 0.9;
+
+	}
+
+	#Non {
+		position: relative;
+		width: 11.5vw;
+		height: auto;
+
+		box-shadow: 0px 10px 14px -7px #fff6af;
+		background-image: linear-gradient(to left, #f77062 0%, #fe5196 100%);
+		border-radius: 8px;
+		display: inline-block;
+		cursor: pointer;
+		color: #333333;
+		font-family: Arial;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 0.53vw;
+		text-decoration: none;
+		text-shadow: 0px 1px 0px white;
+		outline: none;
+		opacity: 0.9
+
+	}
+
+	#Jsp {
+		position: relative;
+		width: 14vw;
+		height: auto;
+
+		box-shadow: 0px 10px 14px -7px #fff6af;
+		background-image: linear-gradient(120deg, #f6d365 0%, #fee140 100%);
+		border-radius: 8px;
+		display: inline-block;
+		cursor: pointer;
+		color: #333333;
+		font-family: Arial;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 0.53vw;
+		text-decoration: none;
+		text-shadow: 0px 1px 0px white;
+		outline: none;
+		opacity: 0.9;
+		margin-right:3vw;
+		margin-left:3vw;
+
+	}
+
+	#ProbOui {
+		position: relative;
+		width: 20vw;
+		height: auto;
+
+		box-shadow: 0px 10px 14px -7px #fff6af;
+		background-image: linear-gradient(60deg, #43e97b 0%, #fee140 100%);
+		border-radius: 8px;
+		display: inline-block;
+		cursor: pointer;
+		color: #333333;
+		font-family: Arial;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 0.53vw;
+		text-decoration: none;
+		text-shadow: 0px 1px 0px white;
+		text-align: center;
+		outline: none;
+		opacity: 0.9;
+		margin-right:3vw;
+		margin-top:30px;
+	}
+
+	#ProbNon {
+		position: relative;
+		width: 20vw;
+		height: auto;
+
+		box-shadow: 0px 10px 14px -7px #fff6af;
+		background-image: linear-gradient(to right, #fee140 0%, #fa709a 100%);
+		border-radius: 8px;
+		display: inline-block;
+		cursor: pointer;
+		color: #333333;
+		font-family: Arial;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 0.53vw;
+		text-decoration: none;
+		text-shadow: 0px 1px 0px white;
+		outline: none;
+		opacity: 0.9
+	}
+
+
+
+	.buttonRejouer {
+
+		border-radius:8px;
+		font-family:Arial;
+		font-size:1.5em;
+		font-weight:bold;
+		padding:0.5em;
+		text-decoration:none;
+		outline:none;
+        /*background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);*/
+		opacity:0.9;
+		margin-top: 2vw;
+		color:black;
+    	width: auto;
+		margin-left: 3vw;
+		margin-right: 3vw;
+	}
+
+    .button_bilan{
+        border-radius:8px;
+		font-family:Arial;
+		font-size:1.5em;
+		font-weight:bold;
+		padding:0.5em;
+		text-decoration:none;
+		background-image: linear-gradient(120deg, #f6d365 0%, #fee140 100%);
+		outline:none;
+		opacity:0.9;
+		margin-top: 2vw;
+		margin-right: 3vw;
+		margin-left: 3vw;
+		color:black;
+    	width: 160px;
+    }
+
+	.button_corriger{
+	    border-radius:8px;
+		font-family:Arial;
+		font-size:1.5em;
+		font-weight:bold;
+		padding:0.5em;
+		text-decoration:none;
+		outline:none;
+       	background-image: linear-gradient(to right, #38f9d7 0%, #43e97b 100%);
+		opacity:0.9;
+		margin-top: 2vw;
+		margin-right: 3vw;
+		margin-left: 3vw;
+		color:black;
+    	width: 160px;
+	}
+
+	.material-icons{
+		color:black;
+		vertical-align:-5px;
+		margin-right:10px;
+		margin-left: 10px;
+	}
+
+	.ques_fin {
+		position: relative;
+		top:14%;
+		margin: 2% 15% 2% 38%;
+		width: 12vw;
+		height: auto;
+		left: 2%;
+		color:black;
+		font-family:Arial;
+		font-size: 1.3vw;
+		font-weight:bold;
+		text-align: center;
+		z-index:4;
+	}
+
+	.penser {
+		position: relative;
+		top: 10%;
+		margin-left: 38%;
+		margin-right: 15%;
+		width: 12vw;
+		height: auto;
+		color:black;
+		font-family:Arial;
+		font-size: 1vw;
+		text-align: center;
+		z-index:4;
+		left: 2%;
+
+	}
+
+	.jacket {
+		position: absolute;
+		top:25.7vw;
+		left: 65%;
+		width: 14%;
+		height: 21vw;
+		z-index: 2;
+		display: inline-block;
+	}
+
+	div {
+		text-align: center;
+
+	}
+
+
+	.pell {
+		position: absolute;
+		top: 25vw;
+		left: 62%;
+		height: 22.3vw;
+		width: 20%;
+		z-index: 1;
+
+		display: inline-block;
+	}
+
+
+
+	#pepper_fin {
+		display: inline-block;
+	}
+
+	.jacket_pell {
+		display: inline-block;
+	}
+
+	.bulle_fin{
+    position: absolute;
+    top: 6%;
+   	right: 42%;
+    width: 25%;
+    height: auto;
+    z-index:3;
+}
+
+    .logo_fin{
+		position: absolute;
+		width:20vw;
+		height: 15vw;
+		top: 25vw;
+		left: 35%;
+		display: inline-block;
+	}
+}
+
+
+/* Source :  https://codepen.io/jupago/pen/GPxqLX - CodePen Home
+Quote: Jared Spool • Web Site Usability: A Designer's Guide
+Juan Pablo */
+/* center the blockquote in the page */
+.blockquote-wrapper {
+   /*display: flex;
+   height: 32vh;*/
+   padding: 0 20px;
+	opacity: 0.98;
+	min-height: 20%;
+}
+
+/* Blockquote main style */
+.blockquote {
+    position: relative;
+    font-family: 'Barlow Condensed', sans-serif;
+    max-width: 50%;
+    margin: 0 auto 10px auto;
+    align-self: center;
+	height: 100%;
+}
+
+/* Blockquote header */
+.blockquote h1 {
+    font-family: 'American Typewriter', sans-serif;
+    position: relative; /* for pseudos */
+    color: lightcoral;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.6;
+    margin: 0;
+    border: solid 2px;
+    border-radius:20px;
+    padding: 25px;
+}
+
+/* Blockquote right double quotes */
+.blockquote h1:after {
+    content:"";
+    position: absolute;
+    border: 2px solid lightcoral;
+    border-radius: 0 6vw 0 0;
+    width: 3vw;
+    height: 5vh;
+    bottom: -5.2vh;
+    left: 13vw;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3;
+}
+
+.blockquote h1:before {
+    content:"";
+    position: absolute;
+    width: 6vw;
+    border: 2px solid darkslategray;
+    bottom: -0.15vw;
+    left: 13vw;
+    z-index: 2;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 600px) {
+    .blockquote h1 {
+        font-size: 1.7vw;
+        line-height: 1.6;
+		background-color: darkslategray;
+		opacity: 0.98;
+		min-height: 19vh;
+   }
+
+}
+
+.block_menu_span{
+	position: relative;
+	top: 7vh;
+	color: aliceblue;
+}
+
+
+.block_menu_confirmation{
+	position: relative;
+	top: 5vh;
+	color: aliceblue;
+}
+
+/* Blockquote subheader */
+.blockquote h4 {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+    margin-left:150px;
+    padding-left:12px;
+}
+
+
+.blockquote h4:first-letter {
+  margin-left:-12px;
+}
+
+.blockquote_question {
+	font-size: 1.7vw;
+	line-height: 1.6;
+	display: block;
+	padding-bottom: 2vh;
+}
+
+#question{
+	color: aliceblue;
+}
+#question_box{
+	display: block;
+	/*min-height: 11vh;
+	padding-top: 4vh;
+	 */
+}
+.trouve {
+		display:block;
+		font-size:60%;
+		color:white
+	}
+
+#oui_non{
+	display: block;
+	margin-right:3%;
+    width:auto;
+    height:auto;
+
+}
+
+#oui, #non {
+
+	    border-radius:8px;
+		font-family:Arial;
+		font-size:20px;
+		font-weight:bold;
+		padding:13px 20px;
+		text-decoration:none;
+		outline:none;
+
+		opacity:0.9;
+		margin-top: 20vw;
+		color:black;
+		margin-right:7%;
+    	width: 10vw;
+
+}
+
+#ouiC , #nonC{
+	    border-radius:8px;
+		font-family:Arial;
+		font-size:20px;
+		font-weight:bold;
+		padding:13px 20px;
+		text-decoration:none;
+		outline:none;
+
+		opacity:0.9;
+		margin-top: 2vw;
+		color:black;
+		margin-right:5%;
+    	width: 10vw;
+}
+
+#nonC{
+	margin-right:0;
+}
+#oui, #ouiC{
+    background-image: linear-gradient(to right, #38f9d7 0%, #43e97b 100%);
+		background-color: #ffec64;
+}
+
+#non , #nonC{
+    background-image: linear-gradient(to left, #f77062 0%, #fe5196 100%);
+
+}
+
+.buttonReco {
+		width: auto;
+		border-radius: 90px;
+
+		padding: 0.7vw;
+		outline: none;
+		background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);;
+		opacity: 0.9;
+		margin-top: 8vw;
+	}
+
+.one_button {
+		position:absolute;
+		margin-left:75vw;
+		width:auto;
+	}
+
+
+/*CSS liste suggestion*/
+
+#liste{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 78%;
+}
+.div_sug{
+	background: #E4C1ED;
+	width:48%;
+	margin-left:26%;
+	border-radius:5px;
+	display:inline-block;
+	margin-top:4vw;
+    height:46vh;
+
+}
+form{
+	margin:10px;
+	width: auto;
+	padding-top: 3px;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.1);
+	box-shadow: inset 0 0 15px rgba(0,0,0,.2);
+	border-radius: 5px;
+	height: 15%;
+}
+form input{
+	background: white;
+	padding: 1vh 1vw;
+	color: black;
+	margin: 5px 0;
+    border-radius:3px;
+    display: inline-block;
+	border: none;
+}
+
+#buttonSubmit{
+	width: 7vw;
+    height: auto;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    background-color:#ffec64;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:0.53vw;
+	text-decoration:none;
+	text-shadow:0px 1px 0px white;
+    outline:none;
+    opacity:0.9;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+
+#buttonSubmit:hover{
+	opacity: 1;
+}
+
+#recherche{
+	width: 6vw;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#ajout_reponse{
+	width: 3vw;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+#ajout_question{
+ 	width: 10vw;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#ajout_annee{
+	width:3vw;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+ul{
+	margin:10px;
+	width: auto;
+	padding: 10px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.1);
+	box-shadow: inset 0 0 15px rgba(0,0,0,.2);
+	border-radius: 5px;
+	overflow: hidden;
+
+}
+
+ul li{
+	display: inline-flex;
+	background: rgba(255,255,255,.1);
+	padding: 10px 20px;
+	color: black;
+	margin: 5px 0;
+	transition: .5s;
+	width: 20%;
+}
+
+ul li span{
+	margin-top:5vw;
+	display: none;
+}
+
+ul li:hover{
+	transform: scale(1.06);
+	background: #E4C1ED;
+}
+
+ul li img{
+	width: 8vw;
+	border-radius:5px;
+	margin-right:3vw;
+}
+
+.div_tab{
+	background: #E4C1ED;
+	width:70vw;
+	margin-left:15vw;
+	border-radius:5px;
+	display:inline-block;
+	margin-top:3vw;
+    height: 35vh;
+    overflow-y: scroll;
+    #vertical-align:middle;
+
+}
+
+
+tr:nth-child(even), thead {
+  background-color: #E4C1ED;
+
+}
+thead{
+	font-size:1.5vw;
+
+}
+td + td{
+	text-align:center;
+
+}
+td{
+	text-align:left;
+	padding:5px;
+	max-width:50vw;
+	font-size:1.4vw;
+
+}
+
+table{
+	margin:10px;
+	width: auto;
+	padding: 10px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.1);
+	box-shadow: inset 0 0 15px rgba(0,0,0,.2);
+	border-radius: 5px;
+	overflow: hidden;
+	font-family: "American Typewriter", Helvetica, sans-serif;
+	color: darkslategray;
+}
